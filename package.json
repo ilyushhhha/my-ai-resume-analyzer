@@ -1,0 +1,17 @@
+{
+  "name": "my-ai-resume-analyzer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces":[
+    "frontend",
+    "backend"
+  ],
+  "private":"true",
+  "scripts": {
+    "start": "concurrently \"yarn --cwd backend start\" \"yarn --cwd frontend dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^6.x.x"
+  }
+}
